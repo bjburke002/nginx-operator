@@ -1,0 +1,41 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: nginx-operator.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions: {}
+  description: NGINX operator
+  displayName: NGINX
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - nginx
+  links:
+  - name: Nginx Operator
+    url: https://nginx-operator.domain
+  maintainers:
+  - email: bjburke002@gmail.com
+    name: sanora
+  maturity: alpha
+  provider:
+    name: quay.io/sanora12
+  version: 0.0.0
